@@ -1,0 +1,74 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    .navbar-brand {
+        flex-basis: 10%;
+        /* czy zostawiać navbrand jako flexible image, czy lepiej, żeby miał stałą szerokość? */
+
+
+        .img-link {
+            max-width: 100%;
+            min-width: 40px;
+        }
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .hamburger-lines {
+            display: flex;
+            width: 30px;
+            flex-wrap: wrap;
+            height: 1em;
+            align-content: space-between;
+
+            .hamburger-line {
+                height: 4px;
+                background-color: $primary-color;
+                display: block;
+                margin-bottom: 4px;
+                width: 30px;
+            }
+        }
+
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $primary-color;
+    text-align: right;
+    width: 70%;
+    margin-top: auto;
+    list-style-type: none;
+    display: none;
+
+    .main-menu-item {
+        margin-right: 24px;
+        margin-bottom: $base-font-size;
+        font-size: 36px;
+
+        a {
+            text-decoration: none;
+            color: $quaternary-color;
+            text-transform: uppercase;
+
+        }
+
+        &:first-child {
+            color: $quaternary-color;
+            margin-top: 24px;
+            cursor: pointer;
+            /* ważne jest precyzyjne ustawienie tutaj */
+
+        }
+    }
+
+
+}

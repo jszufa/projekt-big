@@ -1,0 +1,369 @@
+@charset "UTF-8";
+.navbar {
+  font-size: 15px;
+}
+
+.navbar, .mh-second-p {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.mh-first-p, h1 {
+  font-family: "Bellota", "Bellota text", serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  /* -webkit-appearance: button;  */
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search] {
+  /* -webkit-appearance: textfield; */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-content {
+  margin: 0 24px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.main-nav .navbar-brand {
+  flex-basis: 10%;
+  /* czy zostawiać navbrand jako flexible image, czy lepiej, żeby miał stałą szerokość? */
+}
+.main-nav .navbar-brand .img-link {
+  max-width: 100%;
+  min-width: 40px;
+}
+.main-nav .hamburger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.main-nav .hamburger .hamburger-lines {
+  display: flex;
+  width: 30px;
+  flex-wrap: wrap;
+  height: 1em;
+  align-content: space-between;
+}
+.main-nav .hamburger .hamburger-lines .hamburger-line {
+  height: 4px;
+  background-color: #1ba5cd;
+  display: block;
+  margin-bottom: 4px;
+  width: 30px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1ba5cd;
+  text-align: right;
+  width: 70%;
+  margin-top: auto;
+  list-style-type: none;
+  display: none;
+}
+.dropdown-menu .main-menu-item {
+  margin-right: 24px;
+  margin-bottom: 16px;
+  font-size: 36px;
+}
+.dropdown-menu .main-menu-item a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.dropdown-menu .main-menu-item:first-child {
+  color: white;
+  margin-top: 24px;
+  cursor: pointer;
+  /* ważne jest precyzyjne ustawienie tutaj */
+}
+
+.main-header {
+  /* problem z ładowaniem tego obrazka */
+  background-image: url("../img/header-flowers.png");
+  background-repeat: no-repeat;
+  background-size: auto 100px;
+  background-position: -13px 14px;
+}
+.main-header h1 {
+  color: #30383b;
+  font-size: 50px;
+  margin-top: auto;
+}
+.main-header .mh-first-p {
+  color: #473452;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.main-header .mh-second-p {
+  font-weight: 40;
+  color: #555555;
+  font-size: 15px;
+}
+.main-header .row {
+  display: flex;
+  align-items: center;
+}
+.main-header .row .reserve-now-btn {
+  color: white;
+  background-color: #1ba5cd;
+  text-transform: uppercase;
+  border-width: 0;
+  padding: 16px 30px;
+  margin-right: 15px;
+}
+.main-header .row .watch-video {
+  border: 1px solid #ccd1c1;
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  position: relative;
+  margin-right: 13px;
+}
+.main-header .row .watch-video .fa-play {
+  color: #473452;
+  font-size: 13px;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+.main-header .row .watch-video-p {
+  font-size: 0.5em;
+}/*# sourceMappingURL=style.css.map */
