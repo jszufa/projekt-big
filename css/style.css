@@ -1,16 +1,4 @@
 @charset "UTF-8";
-.navbar {
-  font-size: 15px;
-}
-
-.navbar, .mh-second-p {
-  font-family: "Roboto", Helvetica, sans-serif;
-}
-
-.mh-first-p, h1 {
-  font-family: "Bellota", "Bellota text", serif;
-}
-
 article,
 aside,
 details,
@@ -245,12 +233,33 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
+.navbar {
+  font-size: 15px;
+}
+
+.navbar, p, button {
+  font-family: "Roboto", sans-serif;
+}
+
+.mh-first-p, h1, h2, .about-first-p {
+  font-family: "Bellota", cursive;
+  color: #473452;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .container-content {
   margin: 0 24px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+section {
+  padding-top: 70px;
 }
 
 .main-nav {
@@ -315,7 +324,6 @@ input[type=checkbox], input[type=radio] {
 }
 
 .main-header {
-  /* problem z ładowaniem tego obrazka */
   background-image: url("../img/header-flowers.png");
   background-repeat: no-repeat;
   background-size: auto 100px;
@@ -327,7 +335,6 @@ input[type=checkbox], input[type=radio] {
   margin-top: auto;
 }
 .main-header .mh-first-p {
-  color: #473452;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -344,6 +351,7 @@ input[type=checkbox], input[type=radio] {
 .main-header .row .reserve-now-btn {
   color: white;
   background-color: #1ba5cd;
+  text-transform: uppercase;
   text-transform: uppercase;
   border-width: 0;
   padding: 16px 30px;
@@ -366,4 +374,41 @@ input[type=checkbox], input[type=radio] {
 }
 .main-header .row .watch-video-p {
   font-size: 0.5em;
+}
+
+@media (min-width: 992px) {
+  .header-box {
+    width: 60%;
+  }
+}
+.about {
+  text-align: center;
+}
+.about .img-small-logo {
+  width: 100px;
+}
+.about .about-first-p {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.about .about-second-p {
+  color: #909090;
+  font-weight: 300;
+  /* inny na podglądzie inny w specyfikacji */
+  font-size: 19px;
+}
+.about .read-more-btn {
+  color: white;
+  background-color: #1ba5cd;
+  text-transform: uppercase;
+  border-width: 0;
+  border-radius: 50px;
+  padding: 25px 53px;
+}
+
+@media (min-width: 992px) {
+  .about-box {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */

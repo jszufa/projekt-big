@@ -1,4 +1,5 @@
 @mixin white-on-blue {
     color: $quaternary-color;
     background-color: $primary-color;
+    text-transform: uppercase;
 }

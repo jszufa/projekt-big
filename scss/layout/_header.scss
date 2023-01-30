@@ -1,5 +1,4 @@
 .main-header {
-    /* problem z ładowaniem tego obrazka */
     background-image: url('../img/header-flowers.png');
     background-repeat: no-repeat;
     background-size: auto 100px;
@@ -14,7 +13,6 @@
     }
 
     .mh-first-p {
-        color: $secondary-color;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 0;
@@ -61,4 +59,12 @@
         }
 
     }
+}
+
+@media (min-width: 992px) {
+
+    .header-box {
+        width: 60%;
+    }
+
 }

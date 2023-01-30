@@ -2,13 +2,15 @@
     font-size: $base-font-size - 1;
 }
 
-.navbar, .mh-second-p {
+.navbar, p, button {
 
     font-family: $font-primary;
 
 }
 
-.mh-first-p, h1 {
+.mh-first-p, h1, h2, .about-first-p {
 
     font-family: $font-secondary;
+    color: $secondary-color
 }
+
