@@ -262,40 +262,62 @@ section {
   padding-top: 70px;
 }
 
-.main-nav {
+.header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  max-width: 600px;
+  display: none;
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .header-bg {
+    display: block;
+  }
+  .main-nav, .header-box {
+    margin-left: 10%;
+  }
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.navbar .main-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  padding-top: 10px;
 }
-.main-nav .navbar-brand {
+.navbar .main-nav .navbar-brand {
   flex-basis: 10%;
   /* czy zostawiać navbrand jako flexible image, czy lepiej, żeby miał stałą szerokość? */
 }
-.main-nav .navbar-brand .img-link {
+.navbar .main-nav .navbar-brand .img-link {
   max-width: 100%;
   min-width: 40px;
 }
-.main-nav .hamburger {
+.navbar .main-nav .hamburger {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.main-nav .hamburger .hamburger-lines {
+.navbar .main-nav .hamburger .hamburger-lines {
   display: flex;
   width: 30px;
   flex-wrap: wrap;
   height: 1em;
   align-content: space-between;
 }
-.main-nav .hamburger .hamburger-lines .hamburger-line {
+.navbar .main-nav .hamburger .hamburger-lines .hamburger-line {
   height: 4px;
   background-color: #1ba5cd;
   display: block;
   margin-bottom: 4px;
   width: 30px;
 }
-
-.dropdown-menu {
+.navbar .dropdown-menu {
   position: absolute;
   top: 0;
   right: 0;
@@ -306,27 +328,50 @@ section {
   list-style-type: none;
   display: none;
 }
-.dropdown-menu .main-menu-item {
+.navbar .dropdown-menu .main-menu-item {
   margin-right: 24px;
   margin-bottom: 16px;
   font-size: 36px;
 }
-.dropdown-menu .main-menu-item a {
+.navbar .dropdown-menu .main-menu-item a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
 }
-.dropdown-menu .main-menu-item:first-child {
+.navbar .dropdown-menu .main-menu-item:first-child {
   color: white;
   margin-top: 24px;
   cursor: pointer;
   /* ważne jest precyzyjne ustawienie tutaj */
 }
 
+@media (min-width: 992px) {
+  .main-nav .hamburger {
+    visibility: hidden;
+    order: 2;
+  }
+  .main-nav .dropdown-menu {
+    display: inline-block;
+    position: relative;
+    order: 1;
+    background-color: transparent;
+    text-align: left;
+    width: 89%;
+    padding-inline-start: 20px;
+  }
+  .main-nav .dropdown-menu .main-menu-item {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .main-nav .dropdown-menu .main-menu-item a {
+    color: #473452;
+  }
+}
 .main-header {
   background-image: url("../img/header-flowers.png");
   background-repeat: no-repeat;
-  background-size: auto 100px;
+  background-size: 8% auto;
   background-position: -13px 14px;
 }
 .main-header h1 {
@@ -378,11 +423,14 @@ section {
 
 @media (min-width: 992px) {
   .header-box {
-    width: 60%;
+    width: 45%;
   }
 }
 .about {
   text-align: center;
+}
+.about .about-box {
+  padding: 5px;
 }
 .about .img-small-logo {
   width: 100px;
@@ -410,5 +458,9 @@ section {
 @media (min-width: 992px) {
   .about-box {
     width: 60%;
+    margin: 0 auto;
+  }
+  .main-header {
+    min-height: 300px;
   }
 }/*# sourceMappingURL=style.css.map */

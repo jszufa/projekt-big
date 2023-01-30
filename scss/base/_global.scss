@@ -13,3 +13,25 @@ h2 {
 section {
     padding-top: 70px;
 }
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    max-width: 600px;
+    display: none;
+    z-index: 10;
+}
+
+@media (min-width: 992px)
+{
+    .header-bg {
+        display:block;
+    }
+
+    .main-nav, .header-box {
+        margin-left: 10%;
+    }
+
+}

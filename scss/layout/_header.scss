@@ -1,7 +1,7 @@
 .main-header {
     background-image: url('../img/header-flowers.png');
     background-repeat: no-repeat;
-    background-size: auto 100px;
+    background-size: 8% auto;
     background-position: -13px 14px;
 
 
@@ -64,7 +64,7 @@
 @media (min-width: 992px) {
 
     .header-box {
-        width: 60%;
+        width: 45%;
     }
 
 }
