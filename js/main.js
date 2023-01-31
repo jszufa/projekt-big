@@ -1,16 +1,16 @@
 $(document).ready(function(){
 
     // DROPDOWN MENU - show
-    $('.hamburger').click (function () {
+    $('.hamburger-custom').click (function () {
 
-        $('.dropdown-menu').css('display', 'block')
+        $('.dropdown-menu-custom').css('display', 'block')
 
     });
     
     // DROPDOWN MENU - hide
     $('.main-menu-item:first-child').click (function () {
 
-        $('.dropdown-menu').css('display', 'none')
+        $('.dropdown-menu-custom').css('display', 'none')
 
     })
     

@@ -1,4 +1,4 @@
-.navbar {
+.navigation-bar {
 
     position: sticky;
     top: 0;
@@ -12,7 +12,7 @@
         padding-top: 10px;
         
 
-        .navbar-brand {
+        .navbar-brand-custom {
             flex-basis: 10%;
             /* czy zostawiać navbrand jako flexible image, czy lepiej, żeby miał stałą szerokość? */
 
@@ -23,7 +23,7 @@
             }
         }
 
-        .hamburger {
+        .hamburger-custom {
             display: flex;
             align-items: center;
             cursor: pointer;
@@ -48,7 +48,7 @@
         }
     }
 
-    .dropdown-menu {
+    .dropdown-menu-custom {
         position: absolute;
         top: 0;
         right: 0;
@@ -89,12 +89,12 @@
     .main-nav {
 
 
-        .hamburger {
+        .hamburger-custom {
             visibility: hidden;
             order: 2
         }
 
-        .dropdown-menu {
+        .dropdown-menu-custom {
             display: inline-block;
             position: relative;
             order: 1;

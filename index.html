@@ -8,8 +8,8 @@
     <title>Projekt SPA</title>
 
     <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,21 +27,22 @@
     <img src="/img/header-bg.png" alt="Spa utilities" class="header-bg">
     <!-- Navigation MENU -->
 
-    <nav class="navbar">
+    <nav class="navigation-bar">
         <div class="container-content main-nav">
 
-            <a class="navbar-brand" href="#">
+
+            <a class="navbar-brand-custom" href="#">
                 <img class="img-link" src="img/logo-txt.png" alt="Spa Center logo with text">
             </a>
 
-            <div class="hamburger">
+            <div class="hamburger-custom">
                 <div class="hamburger-lines">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </div>
             </div>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu-custom">
                 <li class="main-menu-item"><i class="fa-solid fa-xmark"></i></li>
                 <li class="main-menu-item"><a href="#">Home</a></li>
                 <li class="main-menu-item"><a href="#">About</a></li>
@@ -57,16 +58,18 @@
 
     <header id="main-header" class="main-header">
         <div class="container-content header-box">
-            <p class="mh-first-p">Spa & Beauty Center</p>
-            <h1>Beauty and success starts here.</h1>
-            <p class="mh-second-p">Together creeping heaven upon third dominion be upon won't darkness rule hold it
-                created</p>
-            <div class="row">
-                <button class="btn reserve-now-btn">Reserve now</button>
-                <div class="watch-video">
-                    <i class="fa-solid fa-play"></i>
+            <div class="header-lg-holder">
+                <p class="mh-first-p">Spa & Beauty Center</p>
+                <h1>Beauty and success starts here.</h1>
+                <p class="mh-second-p">Together creeping heaven upon third dominion be upon won't darkness rule hold it
+                    created</p>
+                <div class="row-custom">
+                    <button class="reserve-now-btn">Reserve now</button>
+                    <div class="watch-video">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <p class="watch-video-p">Watch our story</p>
                 </div>
-                <p class="watch-video-p">Watch our story</p>
             </div>
         </div>
 
@@ -81,7 +84,7 @@
                 makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie
                 feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets
                 darker and darker</p>
-            <button class="btn read-more-btn">Read more</button>
+            <button class="read-more-btn">Read more</button>
 
         </div>
     </section>
@@ -122,7 +125,44 @@
 
     </section>
 
-    <section id="service" class="service"></section>
+
+    <!-- Using bootstrap -->
+    <section id="procedures" class="procedures">
+        <div class="container-content text-center">
+            <h2>Popular Procedures</h2>
+            <p class="procedures-first-p">To doesn't his appear replenish together called he of mad place won't wherein
+                blessed second every wherein were meat kind wherein and martcin </p>
+            <div class="row procedures-holder">
+                <div class="col-lg card">
+                    <div class="card-body">
+                        <img class="card-img-top" src="img/procedures-bg-1.jpg" alt="Face mask application">
+                        <h3 class="card-title font-weight-bold">Massage Therapy</h3>
+                        <p class="card-text">Living winged said you darkness you're divide gathered and bring one
+                            seasons face great dr Waters firmament place which.</p>
+                        <button class="read-more-btn dark-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="col-lg card mx-lg-4">
+                    <div class="card-body">
+                        <img class="card-img-top" src="img/procedures-bg-2.jpg" alt="Face mask application">
+                        <h3 class="card-title font-weight-bold">Massage Therapy</h3>
+                        <p class="card-text">Living winged said you darkness you're divide gathered and bring one
+                            seasons face great dr Waters firmament place which.</p>
+                        <button class="read-more-btn dark-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="col-lg card">
+                    <div class="card-body">
+                        <img class="card-img-top" src="img/procedures-bg-3.jpg" alt="Face mask application">
+                        <h3 class="card-title font-weight-bold">Massage Therapy</h3>
+                        <p class="card-text">Living winged said you darkness you're divide gathered and bring one
+                            seasons face great dr Waters firmament place which.</p>
+                        <button class="read-more-btn dark-btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="contact"></section>
 
@@ -135,12 +175,12 @@
 
 
     <!-- Bootstrap -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="

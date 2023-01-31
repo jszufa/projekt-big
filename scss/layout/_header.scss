@@ -4,67 +4,74 @@
     background-size: 8% auto;
     background-position: -13px 14px;
 
+    .header-box {
 
 
-    h1 {
-        color: $tertiary-color;
-        font-size: 50px;
-        margin-top: auto;
-    }
+        h1 {
+            color: $tertiary-color;
+            font-size: 50px;
+            margin-top: auto;
+        }
 
-    .mh-first-p {
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 0;
-    }
-
-    .mh-second-p {
-        font-weight: 40;
-        color: #555555;
-        font-size: 15px;
-    }
-
-    .row {
-        display: flex;
-        align-items: center;
-
-        .reserve-now-btn {
-
-            @include white-on-blue;
+        .mh-first-p {
+            font-weight: bold;
             text-transform: uppercase;
-            border-width: 0;
-            padding: 16px 30px;
-            margin-right: 15px;
+            margin-bottom: 0;
         }
 
-        .watch-video {
-            border: 1px solid #ccd1c1;
-            border-radius: 50%;
-            height: 31px;
-            width: 31px;
-            position: relative;
-            margin-right: 13px;
+        .mh-second-p {
+            font-weight: 40;
+            color: #555555;
+            font-size: 15px;
+        }
 
-            .fa-play {
-                color: $secondary-color;
-                font-size: 13px;
-                position: absolute;
-                left: 10px;
-                top: 8px;
+        .row-custom {
+            display: flex;
+            align-items: center;
+
+            .reserve-now-btn {
+
+                @include white-on-blue;
+                border-width: 0;
+                padding: 16px 30px;
+                margin-right: 15px;
             }
-        }
 
-        .watch-video-p {
-            font-size: 0.5em;
-        }
+            .watch-video {
+                border: 1px solid #ccd1c1;
+                border-radius: 50%;
+                height: 31px;
+                width: 31px;
+                position: relative;
+                margin-right: 13px;
 
+                .fa-play {
+                    color: $secondary-color;
+                    font-size: 13px;
+                    position: absolute;
+                    left: 10px;
+                    top: 8px;
+                }
+            }
+
+            .watch-video-p {
+                font-size: 0.5em;
+            }
+
+        }
     }
 }
 
+
 @media (min-width: 992px) {
 
-    .header-box {
-        width: 45%;
+    .main-header {
+        padding-top: 10%;
+
+        .header-lg-holder {
+            width: 70%;
+        }
     }
+
 
 }
