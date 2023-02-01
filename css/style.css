@@ -648,22 +648,29 @@ section {
 }
 .reservation .container-fluid .container-content .reservation-form {
   width: 85%;
-  color: white;
-  text-transform: uppercase;
 }
-.reservation .container-fluid .container-content .reservation-form .form-group input,
-.reservation .container-fluid .container-content .reservation-form .form-group textarea,
-.reservation .container-fluid .container-content .reservation-form .form-group select {
+.reservation .container-fluid .container-content .reservation-form .form-row input,
+.reservation .container-fluid .container-content .reservation-form .form-row textarea,
+.reservation .container-fluid .container-content .reservation-form .form-row select {
   background-color: #1ba5cd;
   border: none;
-  border-bottom: 1px solid #473452;
+  border-bottom: 1px solid white;
   border-radius: 0;
-}
-.reservation .container-fluid .container-content .reservation-form .form-group input::placeholder,
-.reservation .container-fluid .container-content .reservation-form .form-group textarea::placeholder,
-.reservation .container-fluid .container-content .reservation-form .form-group select::placeholder {
   color: white;
   text-transform: uppercase;
+  margin-top: 35px;
+}
+.reservation .container-fluid .container-content .reservation-form .form-row input::placeholder,
+.reservation .container-fluid .container-content .reservation-form .form-row textarea::placeholder,
+.reservation .container-fluid .container-content .reservation-form .form-row select::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+.reservation .container-fluid .container-content .reservation-form .submit-button {
+  background-color: white;
+  color: #473452;
+  font-weight: bold;
+  margin-top: 35px;
 }
 
 @media (min-width: 992px) {

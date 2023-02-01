@@ -20,10 +20,8 @@
             .reservation-form {
 
                 width: 85%;
-                color: $quaternary-color;
-                text-transform: uppercase;
 
-                .form-group {
+                .form-row {
 
                     input,
                     textarea,
@@ -32,8 +30,11 @@
 
                         background-color: $primary-color;
                         border: none;
-                        border-bottom: 1px solid $secondary-color;
+                        border-bottom: 1px solid $quaternary-color;
                         border-radius: 0;
+                        color: $quaternary-color;
+                        text-transform: uppercase;
+                        margin-top: 35px;
 
                         &::placeholder {
 
@@ -44,6 +45,14 @@
 
                     }
 
+                }
+
+                .submit-button {
+
+                    background-color: $quaternary-color;
+                    color: $secondary-color;
+                    font-weight: bold;
+                    margin-top: 35px;
                 }
 
             }

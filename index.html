@@ -227,42 +227,49 @@
 
                 <!-- FORM -->
                 <form id="reservation-form" class="reservation-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="flname"
-                            placeholder="name">
 
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="email address">
-
-                            <input type="tel" class="form-control" id="phone"
-                            placeholder="phone number">
-
-
-
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" id="flname" placeholder="name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="email address">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        
-                        <select class="form-control" id="exampleFormControlSelect1" placeholder="select service">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <select class="form-control" id="exampleFormControlSelect1" placeholder="select service">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="tel" class="form-control" id="phone" placeholder="phone number">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect2">Example multiple select</label>
-                        <select multiple class="form-control" id="exampleFormControlSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+
+                    <div class="form-row">
+                        <div class="col-lg-6">
+                            <input type="date" id="date" name="date" class="form-control">
+
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="time" id="time" name="time" class="form-control">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your notes" rows="3"></textarea>
+
+                    <div class="form-row">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your notes"
+                            rows="3"></textarea>
                     </div>
+
+                    <input type="submit" value="Make an appointment" class="submit-button read-more-btn">
+
                 </form>
 
 
