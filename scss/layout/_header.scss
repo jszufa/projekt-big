@@ -37,11 +37,8 @@
                 margin-right: 15px;
             }
 
-            .watch-video {
-                border: 1px solid #ccd1c1;
-                border-radius: 50%;
-                height: 31px;
-                width: 31px;
+            .circle-icon {
+                @include circle;
                 position: relative;
                 margin-right: 13px;
 
@@ -54,7 +51,7 @@
                 }
             }
 
-            .watch-video-p {
+            .circle-icon-p {
                 font-size: 0.5em;
             }
 

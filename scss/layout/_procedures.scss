@@ -1,4 +1,4 @@
-#procedures {
+.procedures {
 
     .container-content {
 
@@ -25,10 +25,28 @@
                     border-color: transparent;
                 }
 
+                
+                
                 .card-text {
                     color: #a0a0a0;
                     font-weight: 300;
                 }
+
+                /* for blog section only */
+                .category-date  {
+                    text-transform: uppercase;
+                    margin-top: 20px;
+                    font-size: $base-font-size - 6;
+                    
+                    .vl {
+                        font-size: $base-font-size - 5;
+                        color: #878787;
+                        margin: 0 3px;
+                        
+                      }
+                }
+
+                /* both blog and procedures section again */
 
                 .read-more-btn {
                     transition-property: all;
@@ -51,5 +69,17 @@
         margin-top: 30px;
         margin-bottom: 30px;           
     }
+
+    .procedures .container-content .procedures-holder .card .category-date  {
+
+        font-size: $base-font-size - 3;
+        
+        .vl {
+            font-size: $base-font-size - 2;
+            
+          }
+    }
+
+    
 
 }

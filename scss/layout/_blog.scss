@@ -1,0 +1,72 @@
+.team {
+
+    .container-content {
+
+        .procedures-holder {
+
+            .col-lg {
+                border: none;
+                padding: 0;
+                padding-bottom: 55px;
+                overflow: hidden;
+
+                &:hover {
+                    box-shadow: none;
+                }
+
+                .showup-card {
+
+                    position: absolute;
+                    bottom: -50px;
+                    background-color: $quaternary-color;
+                    width: 85%;
+                    align-self: center;
+                    border: none;
+                    transition-duration: 0.3s;
+                    transition-property: all;
+
+                    &:hover {
+
+                        bottom: 8px;
+                        
+                    }
+
+                    .i-holder{
+
+                        width: 70%;
+                        align-self: center;
+
+                        .col{
+
+                            padding: 0;
+
+                            i.fa-brands {
+
+                                display: inline-block;
+                                font-size: $base-font-size + 4;
+                                border-radius: 60px;
+                                box-shadow: 0 0 2px #888;
+                                padding: 0.5em 0.6em;
+                                color: $secondary-color;
+                                /* font-weight: bold; */
+                                transition-duration: 0.3s;
+    
+                                &:hover {
+                                    color: $quaternary-color;
+                                    background-color: $primary-color;
+                                }
+    
+                            }
+                        }
+
+                        
+
+                    }
+
+                    
+                }
+
+            }
+        }
+    }
+}
