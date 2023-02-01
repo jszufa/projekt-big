@@ -1,0 +1,92 @@
+.reservation {
+
+    .container-fluid {
+        padding: 0;
+
+
+        img {
+
+            display: none;
+
+        }
+
+        .container-content {
+
+            flex-basis: 100%;
+            background-color: $primary-color;
+            margin: 0;
+            justify-content: center;
+
+            .reservation-form {
+
+                width: 85%;
+                color: $quaternary-color;
+                text-transform: uppercase;
+
+                .form-group {
+
+                    input,
+                    textarea,
+                    select {
+
+
+                        background-color: $primary-color;
+                        border: none;
+                        border-bottom: 1px solid $secondary-color;
+                        border-radius: 0;
+
+                        &::placeholder {
+
+                            color: $quaternary-color;
+                            text-transform: uppercase;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+
+    .reservation {
+
+        .container-fluid {
+
+
+
+            img {
+
+                width: 40%;
+
+            }
+
+            .container-content {
+
+                width: 60%;
+                justify-content: left;
+
+                .reservation-form {
+
+                    width: 60%;
+                    margin-left: 6.66%;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

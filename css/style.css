@@ -632,4 +632,50 @@ section {
 .team .container-content .procedures-holder .col-lg .showup-card .i-holder .col i.fa-brands:hover {
   color: white;
   background-color: #1ba5cd;
+}
+
+.reservation .container-fluid {
+  padding: 0;
+}
+.reservation .container-fluid img {
+  display: none;
+}
+.reservation .container-fluid .container-content {
+  flex-basis: 100%;
+  background-color: #1ba5cd;
+  margin: 0;
+  justify-content: center;
+}
+.reservation .container-fluid .container-content .reservation-form {
+  width: 85%;
+  color: white;
+  text-transform: uppercase;
+}
+.reservation .container-fluid .container-content .reservation-form .form-group input,
+.reservation .container-fluid .container-content .reservation-form .form-group textarea,
+.reservation .container-fluid .container-content .reservation-form .form-group select {
+  background-color: #1ba5cd;
+  border: none;
+  border-bottom: 1px solid #473452;
+  border-radius: 0;
+}
+.reservation .container-fluid .container-content .reservation-form .form-group input::placeholder,
+.reservation .container-fluid .container-content .reservation-form .form-group textarea::placeholder,
+.reservation .container-fluid .container-content .reservation-form .form-group select::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .reservation .container-fluid img {
+    width: 40%;
+  }
+  .reservation .container-fluid .container-content {
+    width: 60%;
+    justify-content: left;
+  }
+  .reservation .container-fluid .container-content .reservation-form {
+    width: 60%;
+    margin-left: 6.66%;
+  }
 }/*# sourceMappingURL=style.css.map */
