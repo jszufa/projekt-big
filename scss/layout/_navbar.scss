@@ -4,6 +4,7 @@
     top: 0;
     background-color: $quaternary-color;
     z-index: 200;
+    margin-bottom: 30px;
 
 
     .main-nav {
@@ -19,13 +20,15 @@
 
             .img-link {
                 max-width: 100%;
-                min-width: 40px;
+                min-width: 80px;
+                margin-bottom: 10px;
             }
         }
 
         .hamburger-custom {
-            display: flex;
-            align-items: center;
+            position: fixed;
+            right: 24px;
+            top: 35px;
             cursor: pointer;
         
 
@@ -73,7 +76,7 @@
 
             &:first-child {
                 color: $quaternary-color;
-                margin-top: 24px;
+                margin-top: 20px;
                 cursor: pointer;
                 /* ważne jest precyzyjne ustawienie tutaj */
 

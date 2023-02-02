@@ -1,11 +1,30 @@
 .main-footer {
-    img {}
+    
 
     .container-content {
 
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+
+        img {
+            width: 20%;
+            margin: 60px auto
+        }
+
         .menu-custom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 60px;
+            width: 100%;
+            text-align: center;
+            padding: 0;
 
             .main-menu-item {
+                list-style-type: none;
+                flex-basis: 30%;
                 
 
                 a {
@@ -13,6 +32,7 @@
                     color: $secondary-color;
                     text-transform: uppercase;
                     font-weight: bold;
+                    font-size: $base-font-size - 1;
                 }
             }
 
@@ -20,5 +40,20 @@
 
     }
 
-    p.footer-text {}
+    p.footer-text {
+        text-transform: uppercase;
+        color: #888888;
+    }
+
 }
+
+ @media (min-width: 992px) {
+    .main-footer .container-content .menu-custom {
+        
+        width: 80%;
+
+        .main-menu-item {
+        flex-basis: 19%;
+    }
+}
+ }
