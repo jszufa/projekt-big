@@ -1,0 +1,109 @@
+.contact {
+
+    background-color: $primary-color;
+    color: white;
+
+    .container-content {
+
+        h2,
+        .contact-first-p {
+
+            text-align: center;
+            color: $quaternary-color;
+            margin-bottom: 30px;
+        }
+
+        .contact-first-p {
+
+            margin-bottom: 80px;
+        }
+
+
+
+        .row {
+
+
+            .contact-info-holder {
+
+                margin-bottom: 40px;
+                text-transform: uppercase;
+
+                .icon-p-holder {
+                    padding: 0;
+
+                    .contact-p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            /* styles copied from reservation-form with slight changes */
+            form {
+                display: flex;
+                flex-wrap: wrap;
+
+                .form-control {
+
+                    background-color: $primary-color;
+                    border: none;
+                    border: 1px solid $quaternary-color;
+                    border-radius: 0;
+                    color: $quaternary-color;
+                    text-transform: uppercase;
+                    margin-bottom: 35px;
+
+                    &:focus {
+
+                        background-color: white;
+                        color: black;
+
+                    }
+
+                    &::placeholder {
+
+                        color: $quaternary-color;
+                        text-transform: uppercase;
+
+                    }
+
+                }
+
+                .submit-button {
+
+                    background-color: $quaternary-color;
+                    color: $secondary-color;
+                    font-weight: bold;
+                    margin-top: 0px;
+                    margin-bottom: 35px;
+                    transition-duration: 0.3s;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    &:hover {
+                        @include white-on-dark
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.contact-icon {
+
+    margin-right: 30px;
+    height: 25px;
+
+}
+
+@media (min-width: 992px) {
+
+    .contact .container-content .row form .submit-button {
+
+        margin-left: 0;
+       
+    }
+
+}

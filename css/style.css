@@ -296,7 +296,8 @@ section {
   .header-bg {
     display: block;
   }
-  .main-nav, .header-box {
+  .main-nav,
+.header-box {
     margin-left: 10%;
   }
   .container-content {
@@ -660,6 +661,12 @@ section {
   text-transform: uppercase;
   margin-top: 35px;
 }
+.reservation .container-fluid .container-content .reservation-form .form-row input:focus,
+.reservation .container-fluid .container-content .reservation-form .form-row textarea:focus,
+.reservation .container-fluid .container-content .reservation-form .form-row select:focus {
+  background-color: white;
+  color: black;
+}
 .reservation .container-fluid .container-content .reservation-form .form-row input::placeholder,
 .reservation .container-fluid .container-content .reservation-form .form-row textarea::placeholder,
 .reservation .container-fluid .container-content .reservation-form .form-row select::placeholder {
@@ -670,7 +677,13 @@ section {
   background-color: white;
   color: #473452;
   font-weight: bold;
-  margin-top: 35px;
+  transition-duration: 0.3s;
+  margin: 35px auto;
+}
+.reservation .container-fluid .container-content .reservation-form .submit-button:hover {
+  color: white;
+  background-color: #30383b;
+  text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
@@ -685,4 +698,86 @@ section {
     width: 60%;
     margin-left: 6.66%;
   }
+  .reservation .container-fluid .container-content .reservation-form .submit-button {
+    margin-left: 0;
+  }
+}
+.contact {
+  background-color: #1ba5cd;
+  color: white;
+}
+.contact .container-content h2,
+.contact .container-content .contact-first-p {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+.contact .container-content .contact-first-p {
+  margin-bottom: 80px;
+}
+.contact .container-content .row {
+  /* styles copied from reservation-form with slight changes */
+}
+.contact .container-content .row .contact-info-holder {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.contact .container-content .row .contact-info-holder .icon-p-holder {
+  padding: 0;
+}
+.contact .container-content .row .contact-info-holder .icon-p-holder .contact-p {
+  margin-bottom: 0;
+}
+.contact .container-content .row form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .container-content .row form .form-control {
+  background-color: #1ba5cd;
+  border: none;
+  border: 1px solid white;
+  border-radius: 0;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.contact .container-content .row form .form-control:focus {
+  background-color: white;
+  color: black;
+}
+.contact .container-content .row form .form-control::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
+.contact .container-content .row form .submit-button {
+  background-color: white;
+  color: #473452;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  transition-duration: 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .container-content .row form .submit-button:hover {
+  color: white;
+  background-color: #30383b;
+  text-transform: uppercase;
+}
+
+.contact-icon {
+  margin-right: 30px;
+  height: 25px;
+}
+
+@media (min-width: 992px) {
+  .contact .container-content .row form .submit-button {
+    margin-left: 0;
+  }
+}
+.main-footer .container-content .menu-custom .main-menu-item a {
+  text-decoration: none;
+  color: #473452;
+  text-transform: uppercase;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

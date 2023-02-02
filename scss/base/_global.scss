@@ -46,19 +46,20 @@ section {
 
 
 
-@media (min-width: 992px)
-{
-    .header-bg {
-        display:block;
-    }
 
-    .main-nav, .header-box {
-        margin-left: 10%;
-    }
+    @media (min-width: 992px) {
+        .header-bg {
+            display: block;
+        }
 
-    .container-content {
-        width: 60%;
-        margin: 0 auto;
-    }
+        .main-nav,
+        .header-box {
+            margin-left: 10%;
+        }
 
-}
+        .container-content {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+    }

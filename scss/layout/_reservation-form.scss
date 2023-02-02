@@ -36,6 +36,13 @@
                         text-transform: uppercase;
                         margin-top: 35px;
 
+                        &:focus {
+
+                            background-color: white;
+                            color: black;
+
+                        }
+
                         &::placeholder {
 
                             color: $quaternary-color;
@@ -45,6 +52,8 @@
 
                     }
 
+
+
                 }
 
                 .submit-button {
@@ -52,7 +61,13 @@
                     background-color: $quaternary-color;
                     color: $secondary-color;
                     font-weight: bold;
-                    margin-top: 35px;
+                    transition-duration: 0.3s;
+                    margin: 35px auto;
+                    
+
+                    &:hover {
+                        @include white-on-dark
+                    }
                 }
 
             }
@@ -88,6 +103,12 @@
 
                     width: 60%;
                     margin-left: 6.66%;
+
+                    .submit-button {
+                    
+                        margin-left: 0;
+
+                    }
 
                 }
 
