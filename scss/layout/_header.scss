@@ -35,6 +35,11 @@
                 border-width: 0;
                 padding: 16px 30px;
                 margin-right: 15px;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    @include white-on-dark;
+                }
             }
 
             .circle-icon {

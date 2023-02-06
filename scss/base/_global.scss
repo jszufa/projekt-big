@@ -36,14 +36,24 @@ section {
     border-radius: 50px;
     padding: 20px 35px;
     font-size: $base-font-size;
+    transition-duration: 0.3s;
 }
 
 .dark-btn {
     @include white-on-dark;
 }
 
+.hover-dark:hover {
+    @include white-on-dark;
+}
 
+.red {
+    color: rgb(214, 0, 0);
+}
 
+.green {
+    color: green;
+}
 
 
 

@@ -284,12 +284,27 @@ section {
   border-radius: 50px;
   padding: 20px 35px;
   font-size: 16px;
+  transition-duration: 0.3s;
 }
 
 .dark-btn {
   color: white;
   background-color: #30383b;
   text-transform: uppercase;
+}
+
+.hover-dark:hover {
+  color: white;
+  background-color: #30383b;
+  text-transform: uppercase;
+}
+
+.red {
+  color: rgb(214, 0, 0);
+}
+
+.green {
+  color: green;
 }
 
 @media (min-width: 992px) {
@@ -429,6 +444,12 @@ section {
   border-width: 0;
   padding: 16px 30px;
   margin-right: 15px;
+  transition-duration: 0.3s;
+}
+.main-header .header-box .row-custom .reserve-now-btn:hover {
+  color: white;
+  background-color: #30383b;
+  text-transform: uppercase;
 }
 .main-header .header-box .row-custom .circle-icon {
   border: 1px solid #ccd1c1;

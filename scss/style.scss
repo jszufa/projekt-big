@@ -2,9 +2,10 @@
 
 @import 'utils/variables';
 @import 'utils/mixins';
-@import 'layout/typography';
 
+@import 'base/typography';
 @import 'base/global';
+
 @import 'layout/navbar';
 @import 'layout/header';
 @import 'layout/about';

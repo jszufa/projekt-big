@@ -84,7 +84,7 @@
                 makes the plants and trees wilt even in the moonlit nights. The eastern wind breeze brings an eerie
                 feeling, that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets
                 darker and darker</p>
-            <button class="read-more-btn">Read more</button>
+            <button class="read-more-btn hover-dark">Read more</button>
 
         </div>
     </section>
@@ -225,7 +225,7 @@
 
             <div class="container-content d-flex align-content-center">
 
-                <!-- FORM -->
+                <!-- RESERVATION FORM -->
                 <form id="reservation-form" class="reservation-form">
 
                     <div class="form-row">
@@ -233,17 +233,17 @@
                             <input type="text" class="form-control" id="flname" placeholder="name">
                         </div>
                         <div class="col-lg-6">
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                            <input type="email" class="form-control" id="email"
                                 placeholder="email address">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="col-lg-6">
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control" id="service">
                                 <option>Select service</option>
-                                <option>Normal service</option>
-                                <option>VIP service</option>
+                                <option>normal service</option>
+                                <option>vip service</option>
                             </select>
                         </div>
                         <div class="col-lg-6">
@@ -262,12 +262,13 @@
                     </div>
 
                     <div class="form-row">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your notes"
+                        <textarea class="form-control" id="notes" placeholder="Your notes"
                             rows="3"></textarea>
                     </div>
-                    <div class="d-flex">
-                    <input type="submit" value="Make an appointment" class="submit-button read-more-btn">
-                </div>
+                    <div class="d-flex form-last-element">
+                        <input type="submit" value="Make an appointment" class="submit-button read-more-btn"
+                            id="reservation-button">
+                    </div>
 
                 </form>
 
@@ -350,6 +351,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- CONTACT FORM -->
                 <div class="col-lg-6">
                     <form id="reservation-form" class="reservation-form">
