@@ -130,7 +130,7 @@ $(document).ready(function () {
                 console.log(resJson);
 
                 pElement.className = 'green';
-                pElement.innerHTML = `Dziękujemy ${$('#flname')[0].value}. Zostałeś zapisany!`;
+                pElement.innerHTML = `Dziękujemy ${resJson.appointment.name}. Zostałeś zapisany!`;
                 $('.form-last-element').after(pElement);
 
             })

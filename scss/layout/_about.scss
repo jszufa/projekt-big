@@ -6,13 +6,14 @@
     }
 
     .img-small-logo {
-        width: 100px;
+        max-width: 100px;
     }
 
     .about-first-p {
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 0;
+        letter-spacing: 2px;
     }
 
     .about-second-p {

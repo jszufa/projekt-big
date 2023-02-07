@@ -63,7 +63,7 @@
                     font-weight: bold;
                     transition-duration: 0.3s;
                     margin: 35px auto;
-                    
+
 
                     &:hover {
                         @include white-on-dark
@@ -86,8 +86,6 @@
 
         .container-fluid {
 
-
-
             img {
 
                 width: 40%;
@@ -105,7 +103,7 @@
                     margin-left: 6.66%;
 
                     .submit-button {
-                    
+
                         margin-left: 0;
 
                     }

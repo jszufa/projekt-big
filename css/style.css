@@ -262,6 +262,10 @@ h3 {
   font-size: 22px;
 }
 
+p {
+  line-height: 1.5;
+}
+
 section {
   padding-top: 70px;
 }
@@ -427,6 +431,7 @@ section {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
+  letter-spacing: 2px;
 }
 .main-header .header-box .mh-second-p {
   font-weight: 40;
@@ -436,6 +441,7 @@ section {
 .main-header .header-box .row-custom {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main-header .header-box .row-custom .reserve-now-btn {
   color: white;
@@ -467,7 +473,8 @@ section {
   top: 8px;
 }
 .main-header .header-box .row-custom .circle-icon-p {
-  font-size: 0.5em;
+  font-size: 15px;
+  margin-top: auto;
 }
 
 @media (min-width: 992px) {
@@ -485,12 +492,13 @@ section {
   padding: 5px;
 }
 .about .img-small-logo {
-  width: 100px;
+  max-width: 100px;
 }
 .about .about-first-p {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
+  letter-spacing: 2px;
 }
 .about .about-second-p {
   color: #909090;
